@@ -1,0 +1,41 @@
+{
+  "name": "@contentlayer/core",
+  "version": "0.0.22",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "_prepack": "yarn build",
+    "dev": "rm -rf dist && tsc --watch",
+    "build": "run g:build && echo Build complete"
+  },
+  "peerDependencies": {
+    "esbuild": "0.11.x || 0.12.x"
+  },
+  "peerDependenciesMeta": {
+    "esbuild": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@contentlayer/utils": "workspace:*",
+    "@effect-ts/core": "^0.43.7",
+    "@effect-ts/otel": "^0.5.0",
+    "camel-case": "^4.1.2",
+    "esbuild": "0.11.x || 0.12.x",
+    "gray-matter": "^4.0.3",
+    "markdown-wasm": "^1.1.2",
+    "mdx-bundler": "^4.1.1",
+    "pkg-up": "^3.1.0",
+    "rehype-stringify": "^8.0.0",
+    "remark-parse": "^9.0.0",
+    "remark-rehype": "^8.1.0",
+    "rxjs": "^7.1.0",
+    "source-map-support": "^0.5.19",
+    "type-fest": "^1.2.1",
+    "unified": "^9.2.1"
+  },
+  "devDependencies": {
+    "@types/source-map-support": "^0.5.3"
+  }
+}

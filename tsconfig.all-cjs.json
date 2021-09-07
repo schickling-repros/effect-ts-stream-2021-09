@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {},
+  "include": [],
+  "references": [
+    { "path": "./packages/@contentlayer/cli/tsconfig.cjs.json" },
+    { "path": "./packages/@contentlayer/core/tsconfig.cjs.json" },
+    { "path": "./packages/@contentlayer/source-files/tsconfig.cjs.json" },
+    { "path": "./packages/@contentlayer/tracing-node/tsconfig.cjs.json" },
+    { "path": "./packages/@contentlayer/utils/tsconfig.cjs.json" },
+    { "path": "./packages/contentlayer/tsconfig.cjs.json" }
+  ]
+}

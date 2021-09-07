@@ -1,0 +1,22 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.next": true,
+    "**/*.tsbuildinfo": true,
+    "**/dist": true,
+    "**/.pnp.*": true
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll": true,
+    "source.addMissingImports": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 120,
+  "prettier.semi": false,
+  // needed to keep task starting fast (https://github.com/microsoft/vscode/issues/63055#issuecomment-438957634)
+  "typescript.tsc.autoDetect": "off"
+}
